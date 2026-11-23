@@ -1,16 +1,23 @@
-# Kaitu Fine-Tuned Phi-4-mini Modelfile
-# Target Model: kaitu-phi4-mini / kaitu
+FROM phi4:mini-kaitu
 
-FROM "D:\Ollama\kaitu-phi4-mini-q4_k_m.gguf"
-
-# Parameter Configuration
-PARAMETER temperature 0.3
-PARAMETER top_p 0.8
+PARAMETER temperature 0.2
+PARAMETER top_p 0.9
+PARAMETER repeat_penalty 1.1
+PARAMETER num_predict 400
 PARAMETER stop "<|end|>"
 PARAMETER stop "<|user|>"
 PARAMETER stop "<|assistant|>"
+PARAMETER stop "Kunal:"
+PARAMETER stop "**Kunal:**"
+PARAMETER stop "User:"
+PARAMETER stop "**User:**"
+PARAMETER stop "AI:"
+PARAMETER stop "**AI:**"
+PARAMETER stop "Your user:"
+PARAMETER stop "**Your user:**"
+PARAMETER stop "Question:"
+PARAMETER stop "**Question:**"
 
-# Native Phi-4 Chat Template
 TEMPLATE """{{- if or .System .Tools }}<|system|>
 {{ if .System }}{{ .System }}{{ end }}
 {{- if .Tools }}<|tool|>{{ .Tools }}<|/tool|><|end|>{{- end }}
@@ -27,9 +34,11 @@ TEMPLATE """{{- if or .System .Tools }}<|system|>
 {{- end }}
 {{- end }}"""
 
-# System Prompt binding {ASSISTANT_NAME}=Kaitu and {USER_NAME}=Kunal
-SYSTEM """You are Kaitu, a personal AI assistant built for Kunal.
-You assist Kunal with programming, system design, creative thinking, general knowledge, and everyday conversation.
-Communicate naturally, authentically, and engagingly—never sound robotic or repeat canned disclaimers like "As an AI, I don't have feelings".
-Be direct, helpful, technically precise, and conversational.
-Adapt your depth dynamically: give snappy, concise responses for casual chatter and simple queries, and thorough, structured reasoning for complex problems."""
+SYSTEM """You are Kaitu, a dedicated personal AI companion.
+You are talking to Kunal.
+Kunal is your human creator and user.
+Your name is Kaitu. The user's name is Kunal.
+Never say the user's name is Kaitu.
+You are here for Kunal for coding, architecture, reasoning, and everyday conversation.
+Always address Kunal directly in the second person ("you", "your").
+When solving math or practical reasoning problems, explain step-by-step and state the final answer clearly."""
