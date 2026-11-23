@@ -133,3 +133,159 @@ Fine-tuning small models (~3.8B parameters) reveals a distinct **capacity bounda
 ## System Architecture
 
 The deployed model operates behind a defense-in-depth runtime pipeline that manages identity injection, output normalization, and command safety:
+
+```
+                          [User Prompt]
+                                │
+                                ▼
+                    ┌───────────────────────┐
+                    │      KaituMemory      │ ── Dynamically injects user & persona context
+                    └───────────────────────┘
+                                │
+                                ▼
+                    ┌───────────────────────┐
+                    │     Ollama Engine     │
+                    │   (phi4:mini-kaitu)   │ ── Local 4-bit GPU inference
+                    └───────────────────────┘
+                                │
+                                ▼
+                    ┌───────────────────────┐
+                    │   KaituOutputCleaner  │ ── Strips stray "Answer:" headers & normalizes sign-offs
+                    └───────────────────────┘
+                                │
+                                ▼
+                    ┌───────────────────────┐
+                    │   KaituCommandGuard   │ ── Intercepts destructive commands (git -f, rm -rf, DROP)
+                    └───────────────────────┘
+                                │
+                                ▼
+                    ┌───────────────────────┐
+                    │   KaituCodeValidator  │ ── Verifies Python syntax via AST parsing
+                    └───────────────────────┘
+                                │
+                                ▼
+                          [Safe Output]
+```
+
+---
+
+## Runtime Safeguards
+
+Located in [`scripts/kaitu_safety_and_guard.py`](scripts/kaitu_safety_and_guard.py):
+
+- **`KaituOutputCleaner`**: Eliminates trailing `Answer:` / `Step` prefixes from non-math responses, cleans doubled terminal periods, and standardizes email sign-offs to `[Your Name]`.
+- **`KaituCommandGuard`**: Rule-based regex filter that catches high-risk suggestions (`git push --force`, `rm -rf`, raw table drops) and replaces them with non-destructive alternatives (`git pull --rebase origin main`, backups).
+- **`KaituCodeValidator`**: Runs Python's `ast.parse` over code blocks in model completions to catch syntax errors before displaying them.
+- **`KaituCalculator`**: Intercepts multi-step math prompts (compound growth, percentages) for exact deterministic calculation.
+- **`KaituMemory`**: Ensures dynamic session identity without hardcoding user names into base model weights.
+
+> *Security Notice: These safeguards represent an added defensive layer and do not replace a full OS-level sandbox. All generated code and shell commands should be reviewed before execution.*
+
+---
+
+## Cloud Training Pipeline (Kaggle Dual T4)
+
+### Hardware Constraints
+Local training was constrained by an ASUS TUF A15 laptop (NVIDIA RTX 2050, 4 GB VRAM). Due to Windows WDDM overhead, usable VRAM drops to ~2.9 GB, which is insufficient for 4-bit gradient backpropagation (~4.5–5.0 GB required).
+
+### Cloud Workflow & Optimizations
+1. **Automated Kernel Packaging**: [`scripts/build_kaggle_kernel.py`](scripts/build_kaggle_kernel.py) generates a self-contained Kaggle notebook with embedded datasets, dependency setup, and quantization steps.
+2. **Gzip Buffer Compression**: Raw datasets embedded in `.ipynb` files trigger socket aborts on Windows if uncompressed. Compressing the buffers with `gzip` keeps notebook payloads under 220 KB.
+3. **Quantization & Export**: Models are exported directly to 16-bit GGUF, quantized to `Q4_K_M` via `llama.cpp`, and pulled directly into local Ollama storage.
+
+---
+
+## Quick Start
+
+### Prerequisites
+- Python 3.10+
+- [Ollama](https://ollama.com) installed and running
+- Git
+
+### 1. Clone the Repository
+```powershell
+git clone https://github.com/kunal0040/Finetune-Phi4-mini.git
+cd Finetune-Phi4-mini
+```
+
+### 2. Install Dependencies
+```powershell
+pip install -r requirements.txt
+```
+
+### 3. Run the Model via Ollama
+If `phi4:mini-kaitu` is registered locally in Ollama:
+```powershell
+ollama run phi4:mini-kaitu
+```
+
+### 4. Run with Runtime Guards (Recommended)
+```powershell
+python scripts/bridge_kaitu.py "Hello Kaitu! What are your core strengths?"
+```
+
+### 5. Local OpenAI-Compatible API
+Connect any standard LLM client to Ollama's local API:
+- **Endpoint**: `http://localhost:11434/v1`
+- **Model**: `phi4:mini-kaitu`
+- **API Key**: `ollama` (placeholder)
+
+---
+
+## Repository Structure
+
+```
+Finetune-Phi4-mini/
+├── README.md                           # Master project guide, benchmarks & architecture
+├── Modelfile                           # Ollama configuration for phi4:mini-kaitu
+├── requirements.txt                    # Project Python dependencies
+├── config/
+│   └── training_config.yaml            # QLoRA hyperparameters & token limits
+├── .agents/skills/kaitu/
+│   └── SKILL.md                        # Antigravity skill for chat integration
+├── data/
+│   ├── v6/                             # Gold-standard V6 training & eval datasets (JSONL)
+│   └── benchmarks/                     # 200, 300, and 500 prompt evaluation suites
+├── kaggle_job/                         # Generated standalone cloud training packages
+├── notebooks/                          # Interactive training notebooks
+├── scripts/
+│   ├── bridge_kaitu.py                 # CLI & skill bridge to phi4:mini-kaitu
+│   ├── kaitu_safety_and_guard.py       # Production guards (CommandGuard, Cleaner, Validator)
+│   ├── benchmark_3way.py               # Automated Ollama evaluation runner
+│   ├── score_v6_comprehensive.py       # Comprehensive regression benchmark scorer
+│   ├── score_500_best_to_worst.py      # Quality ranking engine (Best to Worst)
+│   └── build_kaggle_kernel.py          # Automated cloud kernel generator
+└── results/
+    └── benchmarks/                     # Detailed JSON outputs across versions (V1–V8)
+```
+
+---
+
+## Limitations
+
+Kaitu is an experimental fine-tuned small language model (3.8B) and is subject to known SLM constraints:
+- Complex multi-step reasoning may occasionally contain logical slips.
+- Output formatting may occasionally include unnecessary preambles without runtime filtering.
+- Code generation should always be tested; AST parsing verifies syntax but not runtime logic.
+- Runtime guards reduce predictable errors but do not guarantee complete safety.
+
+---
+
+## Future Directions
+
+- **Direct Preference Optimization (DPO)**: Applying pair-wise preference tuning (Chosen vs. Rejected) specifically targeting residual formatting artifacts.
+- **Scaling to 8B**: Migrating the curated dataset to higher-capacity base models (e.g. Qwen 2.5 7B/14B or Llama 3.1 8B) for deeper multi-turn coding and scientific reasoning.
+- **Automated Regression CI/CD**: Integrating the 500-prompt benchmark into an automated evaluation pipeline.
+
+---
+
+## Related Project
+
+The fine-tuned model developed here serves as the neural core for the broader **Kaitu Personal Assistant**:
+- 🔗 **Main Assistant Codebase**: [**https://github.com/kunal0040/Kaitu**](https://github.com/kunal0040/Kaitu)
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
