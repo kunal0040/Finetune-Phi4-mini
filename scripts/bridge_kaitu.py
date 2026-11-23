@@ -51,6 +51,22 @@ def query_kaitu(prompt: str, user_name: str = "Kunal") -> str:
 if __name__ == "__main__":
     if len(sys.argv) > 1:
         query = " ".join(sys.argv[1:])
+        print(query_kaitu(query))
     else:
-        query = "Hello Kaitu! Introduce yourself briefly."
-    print(query_kaitu(query))
+        print("=" * 60)
+        print("🤖 Kaitu AI Interactive Terminal (phi4:mini-kaitu + Safety Guards)")
+        print("Type your message and press Enter. Type 'exit' or 'quit' to end.")
+        print("=" * 60)
+        while True:
+            try:
+                user_input = input("\nYou > ").strip()
+                if not user_input:
+                    continue
+                if user_input.lower() in ("exit", "quit", "q", "/bye"):
+                    print("Goodbye, Kunal!")
+                    break
+                response = query_kaitu(user_input)
+                print(f"\nKaitu > {response}")
+            except (KeyboardInterrupt, EOFError):
+                print("\nGoodbye, Kunal!")
+                break
