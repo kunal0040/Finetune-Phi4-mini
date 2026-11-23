@@ -1,0 +1,10 @@
+{
+  "id": "your-username/kaitu-phi4-mini-finetune",
+  "title": "kaitu-phi4-mini-finetune",
+  "code_file": "notebook4c270cdb42.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_internet": "true"
+}

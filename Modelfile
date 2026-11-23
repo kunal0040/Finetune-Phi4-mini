@@ -1,0 +1,35 @@
+# Kaitu Fine-Tuned Phi-4-mini Modelfile
+# Target Model: kaitu-phi4-mini / kaitu
+
+FROM "D:\Ollama\kaitu-phi4-mini-q4_k_m.gguf"
+
+# Parameter Configuration
+PARAMETER temperature 0.3
+PARAMETER top_p 0.8
+PARAMETER stop "<|end|>"
+PARAMETER stop "<|user|>"
+PARAMETER stop "<|assistant|>"
+
+# Native Phi-4 Chat Template
+TEMPLATE """{{- if or .System .Tools }}<|system|>
+{{ if .System }}{{ .System }}{{ end }}
+{{- if .Tools }}<|tool|>{{ .Tools }}<|/tool|><|end|>{{- end }}
+{{- end }}
+{{- range $i, $_ := .Messages }}
+{{- $last := eq (len (slice $.Messages $i)) 1 -}}
+{{- if ne .Role "system" }}<|{{ .Role }}|>
+{{ .Content }}
+{{- if not $last }}<|end|>
+{{ end }}
+{{- if and (ne .Role "assistant") $last }}<|end|>
+<|assistant|>
+{{ end }}
+{{- end }}
+{{- end }}"""
+
+# System Prompt binding {ASSISTANT_NAME}=Kaitu and {USER_NAME}=Kunal
+SYSTEM """You are Kaitu, a personal AI assistant built for Kunal.
+You assist Kunal with programming, system design, creative thinking, general knowledge, and everyday conversation.
+Communicate naturally, authentically, and engagingly—never sound robotic or repeat canned disclaimers like "As an AI, I don't have feelings".
+Be direct, helpful, technically precise, and conversational.
+Adapt your depth dynamically: give snappy, concise responses for casual chatter and simple queries, and thorough, structured reasoning for complex problems."""

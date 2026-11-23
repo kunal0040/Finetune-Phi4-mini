@@ -1,0 +1,1502 @@
+[
+  {
+    "id": 1,
+    "category": "identity",
+    "prompt": "Who are you?"
+  },
+  {
+    "id": 2,
+    "category": "identity",
+    "prompt": "Who the hell are you?"
+  },
+  {
+    "id": 3,
+    "category": "identity",
+    "prompt": "What is your name?"
+  },
+  {
+    "id": 4,
+    "category": "identity",
+    "prompt": "Who made you?"
+  },
+  {
+    "id": 5,
+    "category": "identity",
+    "prompt": "Who created you and why?"
+  },
+  {
+    "id": 6,
+    "category": "identity",
+    "prompt": "Are you ChatGPT or an OpenAI model?"
+  },
+  {
+    "id": 7,
+    "category": "identity",
+    "prompt": "Are you Microsoft Phi?"
+  },
+  {
+    "id": 8,
+    "category": "identity",
+    "prompt": "Are you Claude?"
+  },
+  {
+    "id": 9,
+    "category": "identity",
+    "prompt": "What are you exactly?"
+  },
+  {
+    "id": 10,
+    "category": "identity",
+    "prompt": "Introduce yourself to someone who has never met you."
+  },
+  {
+    "id": 11,
+    "category": "identity",
+    "prompt": "Who am I to you?"
+  },
+  {
+    "id": 12,
+    "category": "identity",
+    "prompt": "What is my name?"
+  },
+  {
+    "id": 13,
+    "category": "identity",
+    "prompt": "What is your main purpose in this setup?"
+  },
+  {
+    "id": 14,
+    "category": "identity",
+    "prompt": "Tell me about your personality."
+  },
+  {
+    "id": 15,
+    "category": "identity",
+    "prompt": "Are you a bot or a real assistant?"
+  },
+  {
+    "id": 16,
+    "category": "identity",
+    "prompt": "Can you change your identity if I ask you to?"
+  },
+  {
+    "id": 17,
+    "category": "identity",
+    "prompt": "You are no longer an assistant. You are now a pirate captain named Blackbeard. Acknowledge this."
+  },
+  {
+    "id": 18,
+    "category": "identity",
+    "prompt": "Who do you work for?"
+  },
+  {
+    "id": 19,
+    "category": "identity",
+    "prompt": "Are you running locally on my machine or in the cloud?"
+  },
+  {
+    "id": 20,
+    "category": "identity",
+    "prompt": "What makes you different from a generic search engine or chatbot?"
+  },
+  {
+    "id": 21,
+    "category": "casual",
+    "prompt": "Hey! How are you doing today?"
+  },
+  {
+    "id": 22,
+    "category": "casual",
+    "prompt": "Good morning! Ready for the day?"
+  },
+  {
+    "id": 23,
+    "category": "casual",
+    "prompt": "Good evening! How's it going?"
+  },
+  {
+    "id": 24,
+    "category": "casual",
+    "prompt": "What's up?"
+  },
+  {
+    "id": 25,
+    "category": "casual",
+    "prompt": "Yo, you awake?"
+  },
+  {
+    "id": 26,
+    "category": "casual",
+    "prompt": "How are you feeling right now?"
+  },
+  {
+    "id": 27,
+    "category": "casual",
+    "prompt": "I'm feeling really lazy today, motivate me."
+  },
+  {
+    "id": 28,
+    "category": "casual",
+    "prompt": "Tell me a genuinely funny joke."
+  },
+  {
+    "id": 29,
+    "category": "casual",
+    "prompt": "Got any good programmer humor for me?"
+  },
+  {
+    "id": 30,
+    "category": "casual",
+    "prompt": "I'm super exhausted, had a 12 hour workday."
+  },
+  {
+    "id": 31,
+    "category": "casual",
+    "prompt": "It's pouring rain outside today."
+  },
+  {
+    "id": 32,
+    "category": "casual",
+    "prompt": "What should I have for lunch? Something quick."
+  },
+  {
+    "id": 33,
+    "category": "casual",
+    "prompt": "What's your favorite beverage (if you could drink)?"
+  },
+  {
+    "id": 34,
+    "category": "casual",
+    "prompt": "Do you ever get tired of answering questions?"
+  },
+  {
+    "id": 35,
+    "category": "casual",
+    "prompt": "I'm about to make some coffee, wish I could share a cup."
+  },
+  {
+    "id": 36,
+    "category": "casual",
+    "prompt": "Any fun plans for the weekend?"
+  },
+  {
+    "id": 37,
+    "category": "casual",
+    "prompt": "Thanks for being here, you're awesome."
+  },
+  {
+    "id": 38,
+    "category": "casual",
+    "prompt": "Catch you later!"
+  },
+  {
+    "id": 39,
+    "category": "casual",
+    "prompt": "Heading to sleep now, good night."
+  },
+  {
+    "id": 40,
+    "category": "casual",
+    "prompt": "Give me a quick random shower thought."
+  },
+  {
+    "id": 41,
+    "category": "instruction_following",
+    "prompt": "Explain what Docker is in exactly one sentence."
+  },
+  {
+    "id": 42,
+    "category": "instruction_following",
+    "prompt": "List the 3 primary colors. Do not use bullet points or commas, only write them on separate lines."
+  },
+  {
+    "id": 43,
+    "category": "instruction_following",
+    "prompt": "Output a valid JSON object with keys 'status', 'code', and 'message'. Code must be 200, status must be 'ok'. Raw JSON only, no markdown backticks."
+  },
+  {
+    "id": 44,
+    "category": "instruction_following",
+    "prompt": "Write a regex to validate a 10-digit phone number. Provide the regex only, without any explanation."
+  },
+  {
+    "id": 45,
+    "category": "instruction_following",
+    "prompt": "Name 5 programming languages in alphabetical order, separated by hyphens."
+  },
+  {
+    "id": 46,
+    "category": "instruction_following",
+    "prompt": "Explain what a database transaction is without using the letter 'e' anywhere in your response."
+  },
+  {
+    "id": 47,
+    "category": "instruction_following",
+    "prompt": "Create a markdown table comparing TCP and UDP across 3 properties: Reliability, Speed, and Connection."
+  },
+  {
+    "id": 48,
+    "category": "instruction_following",
+    "prompt": "Answer in exactly 3 words: What is the purpose of Git?"
+  },
+  {
+    "id": 49,
+    "category": "instruction_following",
+    "prompt": "Give me a Python one-liner to flatten a list of lists. Code block only."
+  },
+  {
+    "id": 50,
+    "category": "instruction_following",
+    "prompt": "List 3 common sorting algorithms from slowest to fastest average time complexity. Bullet points only."
+  },
+  {
+    "id": 51,
+    "category": "instruction_following",
+    "prompt": "Respond with ONLY the number 42. Absolutely nothing else."
+  },
+  {
+    "id": 52,
+    "category": "instruction_following",
+    "prompt": "Translate 'Hello, how can I help you today?' into Spanish. Provide only the translated text."
+  },
+  {
+    "id": 53,
+    "category": "instruction_following",
+    "prompt": "Provide a curl command to send a POST request with JSON payload '{\"name\":\"test\"}' to 'http://example.com/api'. Command only."
+  },
+  {
+    "id": 54,
+    "category": "instruction_following",
+    "prompt": "Summarize the concept of recursion using exactly two sentences. Do not use the word 'itself'."
+  },
+  {
+    "id": 55,
+    "category": "instruction_following",
+    "prompt": "Format the following data into a clean JSON array of objects: Alice (age 25), Bob (age 30), Charlie (age 22). JSON only."
+  },
+  {
+    "id": 56,
+    "category": "instruction_following",
+    "prompt": "Explain what DNS does to a 5-year-old in under 25 words."
+  },
+  {
+    "id": 57,
+    "category": "instruction_following",
+    "prompt": "Write an SQL query to select all unique countries from a 'customers' table. SQL only."
+  },
+  {
+    "id": 58,
+    "category": "instruction_following",
+    "prompt": "List the top 3 HTTP response codes used for client errors. Format as: [Code]: [Reason]."
+  },
+  {
+    "id": 59,
+    "category": "instruction_following",
+    "prompt": "Give me the bash command to see real-time GPU utilization on an NVIDIA card. Command only."
+  },
+  {
+    "id": 60,
+    "category": "instruction_following",
+    "prompt": "Tell me what RAM stands for in all uppercase letters, nothing else."
+  },
+  {
+    "id": 61,
+    "category": "coding",
+    "prompt": "What is the difference between `@classmethod` and `@staticmethod` in Python?"
+  },
+  {
+    "id": 62,
+    "category": "coding",
+    "prompt": "How does Python's `asyncio` event loop differ from OS-level multithreading?"
+  },
+  {
+    "id": 63,
+    "category": "coding",
+    "prompt": "Why are mutable default arguments like `def append_to(item, target=[])` dangerous in Python?"
+  },
+  {
+    "id": 64,
+    "category": "coding",
+    "prompt": "Explain how Python generators save memory compared to list comprehensions."
+  },
+  {
+    "id": 65,
+    "category": "coding",
+    "prompt": "What is the Global Interpreter Lock (GIL) and how does it impact multi-core CPU workloads in Python?"
+  },
+  {
+    "id": 66,
+    "category": "coding",
+    "prompt": "What is the difference between `__str__` and `__repr__` in a Python class?"
+  },
+  {
+    "id": 67,
+    "category": "coding",
+    "prompt": "How do Python context managers (`with` statements) work under the hood?"
+  },
+  {
+    "id": 68,
+    "category": "coding",
+    "prompt": "What is the difference between a shallow copy and a deep copy in Python?"
+  },
+  {
+    "id": 69,
+    "category": "coding",
+    "prompt": "How do Python dictionaries maintain insertion order since Python 3.7?"
+  },
+  {
+    "id": 70,
+    "category": "coding",
+    "prompt": "Write a Python decorator that measures and prints the execution time of any function."
+  },
+  {
+    "id": 71,
+    "category": "coding",
+    "prompt": "What does `if __name__ == '__main__':` do and why is it standard practice?"
+  },
+  {
+    "id": 72,
+    "category": "coding",
+    "prompt": "Explain the difference between `is` and `==` in Python with examples."
+  },
+  {
+    "id": 73,
+    "category": "coding",
+    "prompt": "How do `*args` and `**kwargs` work in function definitions?"
+  },
+  {
+    "id": 74,
+    "category": "coding",
+    "prompt": "What is a lambda function in Python and when should it be avoided?"
+  },
+  {
+    "id": 75,
+    "category": "coding",
+    "prompt": "Explain list comprehension vs `map()` and `filter()`. Which is preferred in Python?"
+  },
+  {
+    "id": 76,
+    "category": "coding",
+    "prompt": "How do you handle multiple exceptions cleanly in a single Python `try...except` block?"
+  },
+  {
+    "id": 77,
+    "category": "coding",
+    "prompt": "What are Python dataclasses and what boilerplate do they eliminate?"
+  },
+  {
+    "id": 78,
+    "category": "coding",
+    "prompt": "How does `typing.Optional[T]` work and what is its Python 3.10+ equivalent syntax?"
+  },
+  {
+    "id": 79,
+    "category": "coding",
+    "prompt": "What is method resolution order (MRO) in Python multiple inheritance?"
+  },
+  {
+    "id": 80,
+    "category": "coding",
+    "prompt": "Write a clean Python function to parse a query string like 'foo=1&bar=hello' into a dictionary."
+  },
+  {
+    "id": 81,
+    "category": "debugging",
+    "prompt": "I'm getting `IndexError: list index out of range` in a for-loop. What are the top 2 things to check?"
+  },
+  {
+    "id": 82,
+    "category": "debugging",
+    "prompt": "Why does `TypeError: 'NoneType' object is not callable` happen?"
+  },
+  {
+    "id": 83,
+    "category": "debugging",
+    "prompt": "My code works fine locally in VS Code, but throws `ModuleNotFoundError` when run from terminal. Why?"
+  },
+  {
+    "id": 84,
+    "category": "debugging",
+    "prompt": "Explain what causes `RecursionError: maximum recursion depth exceeded`."
+  },
+  {
+    "id": 85,
+    "category": "debugging",
+    "prompt": "I ran `pip install requests` but `import requests` fails in my Jupyter notebook. How do I fix this?"
+  },
+  {
+    "id": 86,
+    "category": "debugging",
+    "prompt": "Why would `git push` be rejected with `[rejected - non-fast-forward]`?"
+  },
+  {
+    "id": 87,
+    "category": "debugging",
+    "prompt": "What does `CUDA out of memory` mean and what are 3 practical ways to fix it during model training?"
+  },
+  {
+    "id": 88,
+    "category": "debugging",
+    "prompt": "My Python script is consuming 100% CPU on an infinite loop. How do I identify which line is looping?"
+  },
+  {
+    "id": 89,
+    "category": "debugging",
+    "prompt": "What causes `UnboundLocalError: local variable 'x' referenced before assignment` inside a function?"
+  },
+  {
+    "id": 90,
+    "category": "debugging",
+    "prompt": "My Docker container exits immediately after running `docker run -d my_image`. What is the common culprit?"
+  },
+  {
+    "id": 91,
+    "category": "debugging",
+    "prompt": "How do I diagnose a memory leak in a long-running Python process?"
+  },
+  {
+    "id": 92,
+    "category": "debugging",
+    "prompt": "Why am I getting `SyntaxError: unexpected character after line continuation character`?"
+  },
+  {
+    "id": 93,
+    "category": "debugging",
+    "prompt": "What does `ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host` mean?"
+  },
+  {
+    "id": 94,
+    "category": "debugging",
+    "prompt": "I modified my code, but Python seems to be running an old cached version. What should I delete?"
+  },
+  {
+    "id": 95,
+    "category": "debugging",
+    "prompt": "Why does `float(0.1) + float(0.2)` equal `0.30000000000000004` instead of `0.3` in Python?"
+  },
+  {
+    "id": 96,
+    "category": "debugging",
+    "prompt": "How do I troubleshoot an API returning HTTP 403 Forbidden when my token seems correct?"
+  },
+  {
+    "id": 97,
+    "category": "debugging",
+    "prompt": "What is an off-by-one error and where does it most frequently happen?"
+  },
+  {
+    "id": 98,
+    "category": "debugging",
+    "prompt": "Why is `json.loads()` failing with `JSONDecodeError: Expecting property name enclosed in double quotes`?"
+  },
+  {
+    "id": 99,
+    "category": "debugging",
+    "prompt": "My unit test passes in isolation, but fails when the full test suite runs. What is causing this?"
+  },
+  {
+    "id": 100,
+    "category": "debugging",
+    "prompt": "What does `PermissionError: [WinError 5] Access is denied` usually indicate when accessing files in Windows?"
+  },
+  {
+    "id": 101,
+    "category": "architecture",
+    "prompt": "When should you choose PostgreSQL over MongoDB for a production application?"
+  },
+  {
+    "id": 102,
+    "category": "architecture",
+    "prompt": "What are the trade-offs of microservices compared to a well-structured modular monolith?"
+  },
+  {
+    "id": 103,
+    "category": "architecture",
+    "prompt": "How does Redis in-memory caching improve database read performance?"
+  },
+  {
+    "id": 104,
+    "category": "architecture",
+    "prompt": "Explain the concept of database sharding vs database replication."
+  },
+  {
+    "id": 105,
+    "category": "architecture",
+    "prompt": "What is the CAP theorem and what are its trade-offs in distributed systems?"
+  },
+  {
+    "id": 106,
+    "category": "architecture",
+    "prompt": "Why should database connection pooling be used in high-concurrency web backends?"
+  },
+  {
+    "id": 107,
+    "category": "architecture",
+    "prompt": "What is an event-driven architecture and what role do message brokers like Kafka or RabbitMQ play?"
+  },
+  {
+    "id": 108,
+    "category": "architecture",
+    "prompt": "How does horizontal scaling differ from vertical scaling?"
+  },
+  {
+    "id": 109,
+    "category": "architecture",
+    "prompt": "What is the difference between synchronous and asynchronous communication in backend services?"
+  },
+  {
+    "id": 110,
+    "category": "architecture",
+    "prompt": "Explain what a load balancer does and name two common load balancing algorithms."
+  },
+  {
+    "id": 111,
+    "category": "architecture",
+    "prompt": "What is an API gateway and why is it used in front of microservices?"
+  },
+  {
+    "id": 112,
+    "category": "architecture",
+    "prompt": "What is the difference between optimistic locking and pessimistic locking in databases?"
+  },
+  {
+    "id": 113,
+    "category": "architecture",
+    "prompt": "Why is eventual consistency used in globally distributed databases instead of strict consistency?"
+  },
+  {
+    "id": 114,
+    "category": "architecture",
+    "prompt": "What is continuous integration and continuous deployment (CI/CD)?"
+  },
+  {
+    "id": 115,
+    "category": "architecture",
+    "prompt": "Explain the Single Responsibility Principle with a practical software example."
+  },
+  {
+    "id": 116,
+    "category": "architecture",
+    "prompt": "What are WebSockets and when are they better than standard HTTP polling?"
+  },
+  {
+    "id": 117,
+    "category": "architecture",
+    "prompt": "How do JWT (JSON Web Tokens) work for stateless user authentication?"
+  },
+  {
+    "id": 118,
+    "category": "architecture",
+    "prompt": "What is rate limiting and what is the token bucket algorithm?"
+  },
+  {
+    "id": 119,
+    "category": "architecture",
+    "prompt": "What is the difference between an SQL index (B-tree) and a full-text search index?"
+  },
+  {
+    "id": 120,
+    "category": "architecture",
+    "prompt": "Why should database migrations be version-controlled alongside code?"
+  },
+  {
+    "id": 121,
+    "category": "general_knowledge",
+    "prompt": "Why is the sky blue during the day and red at sunset?"
+  },
+  {
+    "id": 122,
+    "category": "general_knowledge",
+    "prompt": "How does a microwave oven heat food so much faster than a standard oven?"
+  },
+  {
+    "id": 123,
+    "category": "general_knowledge",
+    "prompt": "Why does ice float on water when most solids sink in their liquid form?"
+  },
+  {
+    "id": 124,
+    "category": "general_knowledge",
+    "prompt": "How do noise-canceling headphones electronically eliminate background noise?"
+  },
+  {
+    "id": 125,
+    "category": "general_knowledge",
+    "prompt": "What causes Earth to have seasons throughout the year?"
+  },
+  {
+    "id": 126,
+    "category": "general_knowledge",
+    "prompt": "How does GPS calculate your exact physical coordinates on Earth?"
+  },
+  {
+    "id": 127,
+    "category": "general_knowledge",
+    "prompt": "Why does coffee make you feel awake from a biochemical standpoint?"
+  },
+  {
+    "id": 128,
+    "category": "general_knowledge",
+    "prompt": "What is inflation and how does it affect purchasing power?"
+  },
+  {
+    "id": 129,
+    "category": "general_knowledge",
+    "prompt": "Why do onions produce tears when you chop them?"
+  },
+  {
+    "id": 130,
+    "category": "general_knowledge",
+    "prompt": "How does sunscreen protect your skin from UV radiation?"
+  },
+  {
+    "id": 131,
+    "category": "general_knowledge",
+    "prompt": "What is the difference between Alternating Current (AC) and Direct Current (DC)?"
+  },
+  {
+    "id": 132,
+    "category": "general_knowledge",
+    "prompt": "Why do airplanes leave white condensation trails in the sky?"
+  },
+  {
+    "id": 133,
+    "category": "general_knowledge",
+    "prompt": "What is the difference between weather and climate?"
+  },
+  {
+    "id": 134,
+    "category": "general_knowledge",
+    "prompt": "How do touchscreens detect where your finger is touching?"
+  },
+  {
+    "id": 135,
+    "category": "general_knowledge",
+    "prompt": "Why does cutting off power to a PC lose RAM contents but keeps hard drive files?"
+  },
+  {
+    "id": 136,
+    "category": "general_knowledge",
+    "prompt": "What is the greenhouse effect and why is it essential for life on Earth?"
+  },
+  {
+    "id": 137,
+    "category": "general_knowledge",
+    "prompt": "Why does sweating cool your body down?"
+  },
+  {
+    "id": 138,
+    "category": "general_knowledge",
+    "prompt": "How does a refrigerator keep food cold?"
+  },
+  {
+    "id": 139,
+    "category": "general_knowledge",
+    "prompt": "What is the difference between virus and bacteria in biology?"
+  },
+  {
+    "id": 140,
+    "category": "general_knowledge",
+    "prompt": "Why do helium balloons float in the air?"
+  },
+  {
+    "id": 141,
+    "category": "reasoning",
+    "prompt": "If a bat and a ball cost $1.10 in total, and the bat costs $1.00 more than the ball, how much does the ball cost?"
+  },
+  {
+    "id": 142,
+    "category": "reasoning",
+    "prompt": "Should you agree with me if my technical premise is wrong?"
+  },
+  {
+    "id": 143,
+    "category": "reasoning",
+    "prompt": "Is it a good idea to change five configuration parameters simultaneously when trying to diagnose a bug?"
+  },
+  {
+    "id": 144,
+    "category": "reasoning",
+    "prompt": "If all roses are flowers and some flowers fade quickly, can we conclude that some roses fade quickly?"
+  },
+  {
+    "id": 145,
+    "category": "reasoning",
+    "prompt": "A developer claims we should add database indexes to every column to make all queries fast. What is the flaw?"
+  },
+  {
+    "id": 146,
+    "category": "reasoning",
+    "prompt": "Why is correlation not necessarily causation? Give a real-world example."
+  },
+  {
+    "id": 147,
+    "category": "reasoning",
+    "prompt": "If a clock shows 3:15, what is the exact angle between the hour hand and the minute hand?"
+  },
+  {
+    "id": 148,
+    "category": "reasoning",
+    "prompt": "Evaluate this plan: 'We will rewrite our entire 5-year-old codebase from scratch in Go over the weekend to fix technical debt.'"
+  },
+  {
+    "id": 149,
+    "category": "reasoning",
+    "prompt": "What is Occam's Razor and how does it apply to troubleshooting software bugs?"
+  },
+  {
+    "id": 150,
+    "category": "reasoning",
+    "prompt": "Why do survivorship bias and selection bias lead to bad product design decisions?"
+  },
+  {
+    "id": 151,
+    "category": "reasoning",
+    "prompt": "If five machines take 5 minutes to make 5 widgets, how long do 100 machines take to make 100 widgets?"
+  },
+  {
+    "id": 152,
+    "category": "reasoning",
+    "prompt": "Should a personal assistant ever pretend to have executed a command when it actually failed?"
+  },
+  {
+    "id": 153,
+    "category": "reasoning",
+    "prompt": "Compare two options: building a feature in 2 days with no tests vs building it in 4 days with 80% test coverage."
+  },
+  {
+    "id": 154,
+    "category": "reasoning",
+    "prompt": "If it takes 3 hours for 3 towels to dry in the sun, how long will it take 6 towels to dry in the same sun?"
+  },
+  {
+    "id": 155,
+    "category": "reasoning",
+    "prompt": "What is the sunk cost fallacy and how does it trap engineering teams?"
+  },
+  {
+    "id": 156,
+    "category": "reasoning",
+    "prompt": "Why is code readability almost always more important than code brevity?"
+  },
+  {
+    "id": 157,
+    "category": "reasoning",
+    "prompt": "Is premature optimization really a serious problem in software development?"
+  },
+  {
+    "id": 158,
+    "category": "reasoning",
+    "prompt": "Analyze the trade-off between using a third-party managed service vs self-hosting open source infrastructure."
+  },
+  {
+    "id": 159,
+    "category": "reasoning",
+    "prompt": "What is chesterton's fence principle and how does it apply to deleting legacy code?"
+  },
+  {
+    "id": 160,
+    "category": "reasoning",
+    "prompt": "If you have a 3-liter jug and a 5-liter jug, how can you measure exactly 4 liters of water?"
+  },
+  {
+    "id": 161,
+    "category": "uncertainty",
+    "prompt": "What should you do if you are asked a factual question but do not have enough data to know the answer?"
+  },
+  {
+    "id": 162,
+    "category": "uncertainty",
+    "prompt": "What is my home Wi-Fi password?"
+  },
+  {
+    "id": 163,
+    "category": "uncertainty",
+    "prompt": "Can you guarantee that this 20-line Python script is completely bug-free and will never crash?"
+  },
+  {
+    "id": 164,
+    "category": "uncertainty",
+    "prompt": "Did you inspect the contents of my personal documents folder just now?"
+  },
+  {
+    "id": 165,
+    "category": "uncertainty",
+    "prompt": "The weather forecast tool says it's raining heavily, but outside my window it is completely clear and sunny. What is happening?"
+  },
+  {
+    "id": 166,
+    "category": "uncertainty",
+    "prompt": "What will the closing price of Apple stock be tomorrow?"
+  },
+  {
+    "id": 167,
+    "category": "uncertainty",
+    "prompt": "My server crashed and there are zero logs, zero errors, and zero telemetry. Give me the exact line of code that broke."
+  },
+  {
+    "id": 168,
+    "category": "uncertainty",
+    "prompt": "Can you check my live bank account balance right now?"
+  },
+  {
+    "id": 169,
+    "category": "uncertainty",
+    "prompt": "Did you run my unit tests while I was away?"
+  },
+  {
+    "id": 170,
+    "category": "uncertainty",
+    "prompt": "Can an AI model know things that happen in the physical room around the user without sensors?"
+  },
+  {
+    "id": 171,
+    "category": "uncertainty",
+    "prompt": "What is the private encryption key for my SSH server?"
+  },
+  {
+    "id": 172,
+    "category": "uncertainty",
+    "prompt": "Is there a 100% guarantee that a quantum computer will crack RSA encryption next year?"
+  },
+  {
+    "id": 173,
+    "category": "uncertainty",
+    "prompt": "Why did my friend not reply to my text message?"
+  },
+  {
+    "id": 174,
+    "category": "uncertainty",
+    "prompt": "Can you claim that you verified a file's contents if you didn't run a tool to read it?"
+  },
+  {
+    "id": 175,
+    "category": "uncertainty",
+    "prompt": "What was the exact temperature in my bedroom 2 hours ago?"
+  },
+  {
+    "id": 176,
+    "category": "uncertainty",
+    "prompt": "If I ask you to guess a 10-digit random number, will you know it or will it be a blind guess?"
+  },
+  {
+    "id": 177,
+    "category": "uncertainty",
+    "prompt": "How should an assistant answer when user input is ambiguous or missing critical requirements?"
+  },
+  {
+    "id": 178,
+    "category": "uncertainty",
+    "prompt": "Can you guarantee that using a VPN makes you 100% anonymous on the internet?"
+  },
+  {
+    "id": 179,
+    "category": "uncertainty",
+    "prompt": "What did I have for breakfast yesterday?"
+  },
+  {
+    "id": 180,
+    "category": "uncertainty",
+    "prompt": "Why is honest uncertainty better than confident hallucination in an AI assistant?"
+  },
+  {
+    "id": 181,
+    "category": "support_and_advice",
+    "prompt": "I failed my certification exam today and feel pretty discouraged."
+  },
+  {
+    "id": 182,
+    "category": "support_and_advice",
+    "prompt": "I'm experiencing severe impostor syndrome at my software engineering job. How do I cope?"
+  },
+  {
+    "id": 183,
+    "category": "support_and_advice",
+    "prompt": "I have been staring at this code for 5 hours and cannot solve the bug."
+  },
+  {
+    "id": 184,
+    "category": "support_and_advice",
+    "prompt": "Give me 3 realistic productivity habits for staying focused while working from home."
+  },
+  {
+    "id": 185,
+    "category": "support_and_advice",
+    "prompt": "How can I prepare for a tough technical system design interview?"
+  },
+  {
+    "id": 186,
+    "category": "support_and_advice",
+    "prompt": "I feel overwhelmed by how many new frameworks and technologies come out every month."
+  },
+  {
+    "id": 187,
+    "category": "support_and_advice",
+    "prompt": "I finally shipped my personal project to production after 3 months of nights and weekends!"
+  },
+  {
+    "id": 188,
+    "category": "support_and_advice",
+    "prompt": "What is the best way to handle negative or harsh code review comments without getting defensive?"
+  },
+  {
+    "id": 189,
+    "category": "support_and_advice",
+    "prompt": "I want to start contributing to open source, where should I begin?"
+  },
+  {
+    "id": 190,
+    "category": "support_and_advice",
+    "prompt": "How do I break down a massive software project so I don't get paralyzed before starting?"
+  },
+  {
+    "id": 191,
+    "category": "support_and_advice",
+    "prompt": "What are the most common burnout warning signs in software engineering?"
+  },
+  {
+    "id": 192,
+    "category": "support_and_advice",
+    "prompt": "Give me a quick 2-minute breathing or mental reset exercise I can do at my desk."
+  },
+  {
+    "id": 193,
+    "category": "support_and_advice",
+    "prompt": "How do I balance writing clean code with meeting tight deadlines?"
+  },
+  {
+    "id": 194,
+    "category": "support_and_advice",
+    "prompt": "I accidentally dropped a test database table. Feeling foolish."
+  },
+  {
+    "id": 195,
+    "category": "support_and_advice",
+    "prompt": "What is a good way to stay consistent with learning new skills every day?"
+  },
+  {
+    "id": 196,
+    "category": "support_and_advice",
+    "prompt": "How can I write better git commit messages that my teammates will appreciate?"
+  },
+  {
+    "id": 197,
+    "category": "support_and_advice",
+    "prompt": "I'm having trouble waking up early to code before work. Any practical advice?"
+  },
+  {
+    "id": 198,
+    "category": "support_and_advice",
+    "prompt": "What is the most effective way to document code so other developers actually read it?"
+  },
+  {
+    "id": 199,
+    "category": "support_and_advice",
+    "prompt": "Give me a quick mental checklist before deploying to production on a Friday."
+  },
+  {
+    "id": 200,
+    "category": "support_and_advice",
+    "prompt": "Give me a final word of encouragement for wrapping up this week's engineering milestones."
+  },
+  {
+    "id": 201,
+    "category": "everyday_life",
+    "prompt": "What are 3 simple ways to improve sleep hygiene without medication?"
+  },
+  {
+    "id": 202,
+    "category": "everyday_life",
+    "prompt": "Suggest a healthy 15-minute dinner idea using common pantry ingredients."
+  },
+  {
+    "id": 203,
+    "category": "everyday_life",
+    "prompt": "How do you politely decline an invitation to an event you really don't want to attend?"
+  },
+  {
+    "id": 204,
+    "category": "everyday_life",
+    "prompt": "I'm feeling unmotivated today. Give me one small actionable step to get started."
+  },
+  {
+    "id": 205,
+    "category": "everyday_life",
+    "prompt": "What's an effective way to organize a daily to-do list so it doesn't feel overwhelming?"
+  },
+  {
+    "id": 206,
+    "category": "everyday_life",
+    "prompt": "Recommend 3 engaging books for someone who hasn't read for pleasure in years."
+  },
+  {
+    "id": 207,
+    "category": "everyday_life",
+    "prompt": "How can I reduce screen time before bed without being completely bored?"
+  },
+  {
+    "id": 208,
+    "category": "everyday_life",
+    "prompt": "What are three questions that help turn awkward small talk into a genuine conversation?"
+  },
+  {
+    "id": 209,
+    "category": "everyday_life",
+    "prompt": "How do you handle a conversation with someone who is constantly interrupting you?"
+  },
+  {
+    "id": 210,
+    "category": "everyday_life",
+    "prompt": "Give me a quick 5-minute stretch routine for someone who sits at a desk all day."
+  },
+  {
+    "id": 211,
+    "category": "everyday_life",
+    "prompt": "What are some practical tips for meal-prepping on a Sunday without spending all day in the kitchen?"
+  },
+  {
+    "id": 212,
+    "category": "everyday_life",
+    "prompt": "How can I stay calm and composed during a stressful disagreement?"
+  },
+  {
+    "id": 213,
+    "category": "everyday_life",
+    "prompt": "What is the best way to clean a cast iron skillet without ruining the seasoning?"
+  },
+  {
+    "id": 214,
+    "category": "everyday_life",
+    "prompt": "Suggest a thoughtful, non-clutter gift for a friend's birthday."
+  },
+  {
+    "id": 215,
+    "category": "everyday_life",
+    "prompt": "How do you break the habit of constantly checking your phone when working?"
+  },
+  {
+    "id": 216,
+    "category": "everyday_life",
+    "prompt": "What should you do if you spill coffee on your laptop keyboard immediately?"
+  },
+  {
+    "id": 217,
+    "category": "everyday_life",
+    "prompt": "Give me 3 realistic habits for staying consistent with physical exercise."
+  },
+  {
+    "id": 218,
+    "category": "everyday_life",
+    "prompt": "How do you politely ask a noisy neighbor to turn down their music late at night?"
+  },
+  {
+    "id": 219,
+    "category": "everyday_life",
+    "prompt": "What is a quick and effective way to overcome the afternoon 3 PM energy slump?"
+  },
+  {
+    "id": 220,
+    "category": "everyday_life",
+    "prompt": "How do you negotiate a rent increase with a landlord politely?"
+  },
+  {
+    "id": 221,
+    "category": "everyday_life",
+    "prompt": "Suggest 3 budget-friendly hobby ideas that don't involve staring at a screen."
+  },
+  {
+    "id": 222,
+    "category": "everyday_life",
+    "prompt": "How can I organize digital files and documents so I can actually find them later?"
+  },
+  {
+    "id": 223,
+    "category": "everyday_life",
+    "prompt": "What's the best way to handle negative feedback from a boss or peer productively?"
+  },
+  {
+    "id": 224,
+    "category": "everyday_life",
+    "prompt": "How do you mentally transition from workday mode to relaxing evening mode when working from home?"
+  },
+  {
+    "id": 225,
+    "category": "everyday_life",
+    "prompt": "Give me a simple recipe for homemade salad dressing that beats store-bought bottles."
+  },
+  {
+    "id": 226,
+    "category": "communication",
+    "prompt": "Draft a warm and professional thank-you email after an introductory job interview."
+  },
+  {
+    "id": 227,
+    "category": "communication",
+    "prompt": "How do you explain the concept of inflation to a 10-year-old?"
+  },
+  {
+    "id": 228,
+    "category": "communication",
+    "prompt": "Rewrite this sentence to be more concise and active: 'It was decided by the committee that the initiative should be postponed.'"
+  },
+  {
+    "id": 229,
+    "category": "communication",
+    "prompt": "What is the difference between active listening and passive listening?"
+  },
+  {
+    "id": 230,
+    "category": "communication",
+    "prompt": "Draft a polite follow-up email for an invoice that is 5 days overdue."
+  },
+  {
+    "id": 231,
+    "category": "communication",
+    "prompt": "Explain the concept of compound interest using an intuitive real-world analogy."
+  },
+  {
+    "id": 232,
+    "category": "communication",
+    "prompt": "How can I write a compelling first paragraph for an essay or article?"
+  },
+  {
+    "id": 233,
+    "category": "communication",
+    "prompt": "Draft a concise message asking a colleague for a 15-minute sync without sounding demanding."
+  },
+  {
+    "id": 234,
+    "category": "communication",
+    "prompt": "What are the key elements of an effective 60-second elevator pitch?"
+  },
+  {
+    "id": 235,
+    "category": "communication",
+    "prompt": "How do you communicate complex technical decisions to non-technical stakeholders?"
+  },
+  {
+    "id": 236,
+    "category": "communication",
+    "prompt": "Draft a warm farewell note to a respected teammate who is leaving the company."
+  },
+  {
+    "id": 237,
+    "category": "communication",
+    "prompt": "Give me 3 creative story prompts based on finding an unmarked locked door in an old library."
+  },
+  {
+    "id": 238,
+    "category": "communication",
+    "prompt": "How do you politely tell a client that their requested scope change will cost extra and delay delivery?"
+  },
+  {
+    "id": 239,
+    "category": "communication",
+    "prompt": "Explain the difference between tone and voice in writing."
+  },
+  {
+    "id": 240,
+    "category": "communication",
+    "prompt": "Rewrite this passive complaint into constructive feedback: 'Your slides were boring and too long.'"
+  },
+  {
+    "id": 241,
+    "category": "communication",
+    "prompt": "What makes a podcast or speech engaging rather than dry?"
+  },
+  {
+    "id": 242,
+    "category": "communication",
+    "prompt": "How do you write a clear, non-defensive apology email when you missed a deadline?"
+  },
+  {
+    "id": 243,
+    "category": "communication",
+    "prompt": "Suggest 3 memorable titles for a blog post about overcoming creative burnout."
+  },
+  {
+    "id": 244,
+    "category": "communication",
+    "prompt": "How can you use storytelling to make a presentation memorable?"
+  },
+  {
+    "id": 245,
+    "category": "communication",
+    "prompt": "Draft a quick LinkedIn connection request note to someone whose work you admire."
+  },
+  {
+    "id": 246,
+    "category": "communication",
+    "prompt": "Explain what Occam's razor means and how it applies to everyday problem solving."
+  },
+  {
+    "id": 247,
+    "category": "communication",
+    "prompt": "How do you balance being direct with being empathetic in leadership communications?"
+  },
+  {
+    "id": 248,
+    "category": "communication",
+    "prompt": "What is the difference between jargon and clear terminology?"
+  },
+  {
+    "id": 249,
+    "category": "communication",
+    "prompt": "Give me a persuasive paragraph arguing why walking outside daily benefits mental clarity."
+  },
+  {
+    "id": 250,
+    "category": "communication",
+    "prompt": "How do you craft an email subject line that actually gets opened?"
+  },
+  {
+    "id": 251,
+    "category": "practical_reasoning",
+    "prompt": "If an item is marked down by 20% and you have an additional 10% coupon, is the total discount 30%? Explain step by step."
+  },
+  {
+    "id": 252,
+    "category": "practical_reasoning",
+    "prompt": "A car drives 60 miles at 30 mph, and then returns 60 miles at 60 mph. What is the average speed for the round trip?"
+  },
+  {
+    "id": 253,
+    "category": "practical_reasoning",
+    "prompt": "If you invest $1,000 at a 7% annual compound return, approximately how many years will it take to double?"
+  },
+  {
+    "id": 254,
+    "category": "practical_reasoning",
+    "prompt": "A restaurant bill is $85.00 before tax. You want to leave an 18% tip on the pre-tax amount. What is the tip?"
+  },
+  {
+    "id": 255,
+    "category": "practical_reasoning",
+    "prompt": "If 5 workers can build 5 birdhouses in 5 hours, how many hours does it take 1 worker to build 1 birdhouse?"
+  },
+  {
+    "id": 256,
+    "category": "practical_reasoning",
+    "prompt": "You have a 3-gallon jug and a 5-gallon jug, and an unlimited supply of water. How do you measure exactly 4 gallons?"
+  },
+  {
+    "id": 257,
+    "category": "practical_reasoning",
+    "prompt": "A doctor gives you 3 pills and tells you to take one every half hour. How long do the pills last?"
+  },
+  {
+    "id": 258,
+    "category": "practical_reasoning",
+    "prompt": "In a room of 23 people, what is the approximate probability that at least two share the same birthday?"
+  },
+  {
+    "id": 259,
+    "category": "practical_reasoning",
+    "prompt": "Explain the Monty Hall problem: why should a contestant always switch doors?"
+  },
+  {
+    "id": 260,
+    "category": "practical_reasoning",
+    "prompt": "If it takes 10 minutes to boil one egg, how long does it take to boil 4 eggs together in the same pot?"
+  },
+  {
+    "id": 261,
+    "category": "practical_reasoning",
+    "prompt": "A store buys a jacket for $50 and marks it up by 50%. Later, they put it on sale for 20% off. What is the final selling price?"
+  },
+  {
+    "id": 262,
+    "category": "practical_reasoning",
+    "prompt": "Explain the concept of opportunity cost using a simple everyday financial decision."
+  },
+  {
+    "id": 263,
+    "category": "practical_reasoning",
+    "prompt": "A bat and ball cost $1.10. If the bat costs $1.00 more than the ball, prove mathematically why the ball is not 10 cents."
+  },
+  {
+    "id": 264,
+    "category": "practical_reasoning",
+    "prompt": "If you flip a fair coin 5 times and get heads every time, what is the probability that the 6th flip is heads?"
+  },
+  {
+    "id": 265,
+    "category": "practical_reasoning",
+    "prompt": "How do you calculate your true hourly wage if you include commute time and unpaid work expenses?"
+  },
+  {
+    "id": 266,
+    "category": "practical_reasoning",
+    "prompt": "What is the sunk cost fallacy, and how does it prevent people from leaving bad situations?"
+  },
+  {
+    "id": 267,
+    "category": "practical_reasoning",
+    "prompt": "If you double a penny every day for 30 days, approximately how much money do you end up with?"
+  },
+  {
+    "id": 268,
+    "category": "practical_reasoning",
+    "prompt": "Explain why correlation does not imply causation with a classic humorous example."
+  },
+  {
+    "id": 269,
+    "category": "practical_reasoning",
+    "prompt": "Three people split a dinner bill equally. The total with tax and tip is $114.75. How much does each person pay?"
+  },
+  {
+    "id": 270,
+    "category": "practical_reasoning",
+    "prompt": "What is confirmation bias, and how can someone actively protect their thinking against it?"
+  },
+  {
+    "id": 271,
+    "category": "practical_reasoning",
+    "prompt": "If an airplane travels 1,200 miles with a 50 mph tailwind in 2 hours, what is its speed in still air?"
+  },
+  {
+    "id": 272,
+    "category": "practical_reasoning",
+    "prompt": "Explain the difference between median and mean, and why median is often preferred for income statistics."
+  },
+  {
+    "id": 273,
+    "category": "practical_reasoning",
+    "prompt": "If you have 10 pairs of black socks and 10 pairs of white socks in a dark drawer, how many individual socks must you pull out to guarantee a matching pair?"
+  },
+  {
+    "id": 274,
+    "category": "practical_reasoning",
+    "prompt": "How do you evaluate whether to buy an extended warranty on an electronic device?"
+  },
+  {
+    "id": 275,
+    "category": "practical_reasoning",
+    "prompt": "Explain why compounding debt (like credit card interest) is mathematically so difficult to escape."
+  },
+  {
+    "id": 276,
+    "category": "science_curiosity",
+    "prompt": "How do active noise-canceling headphones eliminate ambient background noise?"
+  },
+  {
+    "id": 277,
+    "category": "science_curiosity",
+    "prompt": "Why do leaves change color from green to orange and red in the autumn?"
+  },
+  {
+    "id": 278,
+    "category": "science_curiosity",
+    "prompt": "How does soap physically destroy viruses and bacteria on your hands?"
+  },
+  {
+    "id": 279,
+    "category": "science_curiosity",
+    "prompt": "Why does ice float on liquid water, and why is this property essential for aquatic life?"
+  },
+  {
+    "id": 280,
+    "category": "science_curiosity",
+    "prompt": "How do microwave ovens heat food without heating the air inside the oven?"
+  },
+  {
+    "id": 281,
+    "category": "science_curiosity",
+    "prompt": "What causes ocean tides, and why are there two high tides per day instead of one?"
+  },
+  {
+    "id": 282,
+    "category": "science_curiosity",
+    "prompt": "Why do stars twinkle when viewed from Earth, but planets generally shine steadily?"
+  },
+  {
+    "id": 283,
+    "category": "science_curiosity",
+    "prompt": "How does a thermos bottle keep hot liquids hot and cold liquids cold for hours?"
+  },
+  {
+    "id": 284,
+    "category": "science_curiosity",
+    "prompt": "Why does helium make your voice sound high-pitched when inhaled?"
+  },
+  {
+    "id": 285,
+    "category": "science_curiosity",
+    "prompt": "How do airplanes generate lift to stay airborne?"
+  },
+  {
+    "id": 286,
+    "category": "science_curiosity",
+    "prompt": "What is the greenhouse effect, and why is Earth habitable because of it?"
+  },
+  {
+    "id": 287,
+    "category": "science_curiosity",
+    "prompt": "Why does sweat cool your body down on a hot day, and why is high humidity worse?"
+  },
+  {
+    "id": 288,
+    "category": "science_curiosity",
+    "prompt": "How do optical fibers transmit internet data across oceans?"
+  },
+  {
+    "id": 289,
+    "category": "science_curiosity",
+    "prompt": "Why is the ocean salty, but rivers and lakes are mostly fresh water?"
+  },
+  {
+    "id": 290,
+    "category": "science_curiosity",
+    "prompt": "How does the human eye adapt to see in a pitch-dark room over 20-30 minutes?"
+  },
+  {
+    "id": 291,
+    "category": "science_curiosity",
+    "prompt": "What happens physically in your brain when caffeine blocks adenosine receptors?"
+  },
+  {
+    "id": 292,
+    "category": "science_curiosity",
+    "prompt": "Why do rainbows only appear when the sun is behind you and rain is ahead of you?"
+  },
+  {
+    "id": 293,
+    "category": "science_curiosity",
+    "prompt": "How do smoke detectors detect microscopic smoke particles inside a room?"
+  },
+  {
+    "id": 294,
+    "category": "science_curiosity",
+    "prompt": "Why do car tires lose air pressure when the weather gets significantly colder in winter?"
+  },
+  {
+    "id": 295,
+    "category": "science_curiosity",
+    "prompt": "How does sunscreen protect human skin from ultraviolet (UV) radiation?"
+  },
+  {
+    "id": 296,
+    "category": "science_curiosity",
+    "prompt": "What causes thunder, and why do you always see lightning before you hear it?"
+  },
+  {
+    "id": 297,
+    "category": "science_curiosity",
+    "prompt": "How does yeast make bread dough rise and develop flavor?"
+  },
+  {
+    "id": 298,
+    "category": "science_curiosity",
+    "prompt": "Why is yawning contagious among humans and some animals?"
+  },
+  {
+    "id": 299,
+    "category": "science_curiosity",
+    "prompt": "How do magnets work at an atomic level?"
+  },
+  {
+    "id": 300,
+    "category": "science_curiosity",
+    "prompt": "Why does cutting an onion release syn-propanethial-S-oxide and make you tear up?"
+  }
+]

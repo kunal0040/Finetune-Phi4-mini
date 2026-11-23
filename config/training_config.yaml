@@ -1,0 +1,69 @@
+# Kaitu Phi-4-mini Fine-Tuning Configuration
+
+project:
+  name: "kaitu-phi4-mini"
+  version: "1.0.0"
+  description: "Fine-tuning Phi-4-mini as personal AI assistant for Kaitu"
+
+models:
+  base_model_hf: "microsoft/Phi-4-mini-instruct"
+  ollama_baseline: "phi4-mini:latest"
+  ollama_finetuned: "kaitu-phi4-mini:latest"
+  architecture: "phi3"
+  parameter_count: "3.8B"
+
+paths:
+  train_data: "data/train/train.jsonl"
+  eval_data: "data/eval/eval.jsonl"
+  benchmark_general: "data/raw/benchmark_prompts_general.txt"
+  benchmark_situations: "data/raw/benchmark_prompts_situations.txt"
+  output_dir: "checkpoints/kaitu-phi4-mini"
+  adapter_dir: "adapters/kaitu-phi4-mini-lora"
+  merged_dir: "checkpoints/kaitu-phi4-mini-merged"
+  gguf_dir: "checkpoints/kaitu-phi4-mini-gguf"
+  baseline_results: "results/baseline"
+  comparison_results: "results/comparison"
+
+quantization:
+  load_in_4bit: true
+  bnb_4bit_quant_type: "nf4"
+  bnb_4bit_use_double_quant: true
+  bnb_4bit_compute_dtype: "bfloat16"
+
+lora:
+  r: 32
+  lora_alpha: 64
+  lora_dropout: 0.05
+  bias: "none"
+  task_type: "CAUSAL_LM"
+  target_modules:
+    - "q_proj"
+    - "k_proj"
+    - "v_proj"
+    - "o_proj"
+    - "gate_proj"
+    - "up_proj"
+    - "down_proj"
+
+training:
+  per_device_train_batch_size: 1
+  per_device_eval_batch_size: 1
+  gradient_accumulation_steps: 16
+  learning_rate: 0.0003
+  lr_scheduler_type: "cosine"
+  warmup_ratio: 0.05
+  weight_decay: 0.01
+  num_train_epochs: 5
+  max_seq_length: 1024
+  gradient_checkpointing: true
+  optim: "paged_adamw_8bit"
+  logging_steps: 10
+  save_strategy: "epoch"
+  evaluation_strategy: "epoch"
+  seed: 42
+  bf16: true
+  fp16: false
+
+ollama:
+  host: "http://localhost:11434"
+  timeout: 120

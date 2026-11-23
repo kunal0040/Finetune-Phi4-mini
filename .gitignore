@@ -1,0 +1,46 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments & local tooling
+.venv/
+venv/
+ENV/
+env/
+
+# Kaggle credentials & private keys / tokens
+.kaggle/
+kaggle.json
+*.env
+*.key
+*.pem
+*.secret
+*.credentials
+
+# Checkpoints, Adapters & Large Weights (Do not commit large binaries)
+checkpoints/
+adapters/
+models/
+huggingface/
+.cache/
+*.bin
+*.pt
+*.safetensors
+*.gguf
+*.onnx
+
+# Temporary test/pull directories
+test_pull/
+temp/
+tmp/
+
+# OS specific files
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Log files
+*.log

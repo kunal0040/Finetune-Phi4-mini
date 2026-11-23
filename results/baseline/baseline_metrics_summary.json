@@ -1,0 +1,21 @@
+{
+  "model": "phi4-mini:latest (Original Baseline)",
+  "general": {
+    "dataset_label": "phi4-mini General Prompts",
+    "total_test_cases": 50,
+    "avg_latency_seconds": 4.26,
+    "avg_response_words": 25.5,
+    "waiting_for_message_rate": "6/50 (12.0%)",
+    "refusal_rate": "3/50 (6.0%)",
+    "empty_rate": "0/50 (0.0%)"
+  },
+  "situations": {
+    "dataset_label": "phi4-mini Situations Prompts",
+    "total_test_cases": 50,
+    "avg_latency_seconds": 5.21,
+    "avg_response_words": 22.2,
+    "waiting_for_message_rate": "7/50 (14.0%)",
+    "refusal_rate": "7/50 (14.0%)",
+    "empty_rate": "0/50 (0.0%)"
+  }
+}
